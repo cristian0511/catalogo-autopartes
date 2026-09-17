@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Repuestos Automotrices</title>
+    <!-- Bootstrap CSS para un diseño rápido y limpio -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Catálogo de Repuestos y Autopartes 🚗</h1>
+
+        <!-- Sección de Filtros Interactivos -->
+        <div class="row mb-4 bg-white p-3 rounded shadow-sm">
+            <div class="col-md-4 mb-3">
+                <label for="filtroMarca" class="form-label">Filtrar por Marca:</label>
+                <select id="filtroMarca" class="form-select" onchange="filtrarProductos()">
+                    <option value="">Todas las marcas</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Brembo">Brembo</option>
+                    <option value="Monroe">Monroe</option>
+                    <option value="NGK">NGK</option>
+                    <option value="Valeo">Valeo</option>
+                    <option value="K&N">K&N</option>
+                    <option value="Valvoline">Valvoline</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="filtroCategoria" class="form-label">Filtrar por Categoría:</label>
+                <select id="filtroCategoria" class="form-select" onchange="filtrarProductos()">
+                    <option value="">Todas las categorías</option>
+                    <option value="Filtros">Filtros</option>
+                    <option value="Frenos">Frenos</option>
+                    <option value="Suspensión">Suspensión</option>
+                    <option value="Encendido">Encendido</option>
+                    <option value="Transmisión">Transmisión</option>
+                    <option value="Motor">Motor</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="filtroPrecio" class="form-label">Precio Máximo ($): <span id="valorPrecio">150</span></label>
+                <input type="range" class="form-range" id="filtroPrecio" min="10" max="150" value="150" oninput="actualizarPrecio(this.value)">
+            </div>
+        </div>
+
+        <!-- Contenedor donde se mostrarán las tarjetas de productos -->
+        <row id="contenedorProductos" class="row">
+            <!-- Los productos se cargarán dinámicamente con JavaScript -->
+        </row>
+    </div>
+
+    <!-- Script de lógica y filtros -->
+    <script>
+        let listaProductos = [];
+
+        // Cargar el archivo JSON al iniciar la página
+        fetch('productos.json')
+            .then(response => response.json())
+            .then(data => {
+                listaProductos = data;
+                mostrarProductos(listaProductos);
+            })
+            .catch(error => console.error('Error cargando el catálogo:', error));
+
+        function mostrarProductos(productos) {
+            const contenedor = document.getElementById('contenedorProductos');
+            contenedor.innerHTML = '';
+
+            if (productos.length === 0) {
+                contenedor.innerHTML = '<p class="text-center text-muted">No se encontraron repuestos con esos filtros.</p>';
+                return;
+            }
+
+            productos.forEach(prod => {
+                contenedor.innerHTML += `
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-secondary mb-2">${prod.categoria}</span>
+                                <h5 class="card-title">${prod.nombre}</h5>
+                                <p class="card-text text-muted mb-1"><strong>Marca:</strong> ${prod.marca}</p>
+                                <p class="card-text text-success fs-5"><strong>$${prod.precio.toFixed(2)}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function actualizarPrecio(val) {
+            document.getElementById('valorPrecio').innerText = val;
+            filtrarProductos();
+        }
+
+        function filtrarProductos() {
+            const marcaSeleccionada = document.getElementById('filtroMarca').value;
+            const categoriaSeleccionada = document.getElementById('filtroCategoria').value;
+            const precioMaximo = parseFloat(document.getElementById('filtroPrecio').value);
+
+            const filtrados = listaProductos.filter(prod => {
+                const coincideMarca = marcaSeleccionada === "" || prod.marca === marcaSeleccionada;
+                const coincideCategoria = categoriaSeleccionada === "" || prod.categoria === categoriaSeleccionada;
+                const coincidePrecio = prod.precio <= precioMaximo;
+
+                return coincideMarca && coincideCategoria && coincidePrecio;
+            });
+
+            mostrarProductos(filtrados);
+        }
+    </script>
+</body>
+</html>

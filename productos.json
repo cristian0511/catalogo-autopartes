@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "Filtro de Aceite Motor",
+    "marca": "Chevrolet",
+    "categoria": "Filtros",
+    "precio": 12.50,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 2,
+    "nombre": "Pastillas de Freno Delanteras",
+    "marca": "Brembo",
+    "categoria": "Frenos",
+    "precio": 45.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 3,
+    "nombre": "Amortiguador Hidráulico Posterior",
+    "marca": "Monroe",
+    "categoria": "Suspensión",
+    "precio": 68.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 4,
+    "nombre": "Bujía de Encendido Iridio",
+    "marca": "NGK",
+    "categoria": "Encendido",
+    "precio": 14.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 5,
+    "nombre": "Kit de Embrague Completo",
+    "marca": "Valeo",
+    "categoria": "Transmisión",
+    "precio": 120.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 6,
+    "nombre": "Filtro de Aire de Alto Rendimiento",
+    "marca": "K&N",
+    "categoria": "Filtros",
+    "precio": 35.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 7,
+    "nombre": "Discos de Freno Ventilados",
+    "marca": "Brembo",
+    "categoria": "Frenos",
+    "precio": 85.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 8,
+    "nombre": "Bomba de Agua Periférica",
+    "marca": "Chevrolet",
+    "categoria": "Motor",
+    "precio": 55.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 9,
+    "nombre": "Kit de Cables de Bujías",
+    "marca": "NGK",
+    "categoria": "Encendido",
+    "precio": 28.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 10,
+    "nombre": "Terminales de Dirección",
+    "marca": "Monroe",
+    "categoria": "Suspensión",
+    "precio": 22.50,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 11,
+    "nombre": "Filtro de Combustible Inyección",
+    "marca": "Chevrolet",
+    "categoria": "Filtros",
+    "precio": 18.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 12,
+    "nombre": "Aceite Sintético 5W30 (Litro)",
+    "marca": "Valvoline",
+    "categoria": "Motor",
+    "precio": 16.00,
+    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  }
+]
