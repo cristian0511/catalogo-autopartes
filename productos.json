@@ -94,5 +94,21 @@
     "categoria": "Motor",
     "precio": 16.00,
     "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 7,
+    "nombre": "Bomba de Agua para Motor",
+    "marca": "Gates",
+    "categoria": "Motor",
+    "precio": 52.00,
+    "imagen": "https://via.placeholder.com/200?text=Bomba+de+Agua"
+  },
+  {
+    "id": 8,
+    "nombre": "Disco de Freno Ventilado",
+    "marca": "Brembo",
+    "categoria": "Frenos",
+    "precio": 42.50,
+    "imagen": "https://via.placeholder.com/200?text=Disco+de+Freno"
   }
 ]
