@@ -5,7 +5,7 @@
     "marca": "Chevrolet",
     "categoria": "Filtros",
     "precio": 12.50,
-    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+    "imagen": "./img/filtrochevrolet.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "marca": "Brembo",
     "categoria": "Frenos",
     "precio": 45.00,
-    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+    "imagen": "./img/pastillasbrembo.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "marca": "Monroe",
     "categoria": "Suspensión",
     "precio": 68.00,
-    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+    "imagen": "./img/amortiguadormonroe.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "marca": "NGK",
     "categoria": "Encendido",
     "precio": 14.00,
-    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+    "imagen": "./img/bujiankg.jpg"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "marca": "Valeo",
     "categoria": "Transmisión",
     "precio": 120.00,
-    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+    "imagen": "./img/kitembraguevaleo.jpg"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "marca": "K&N",
     "categoria": "Filtros",
     "precio": 35.00,
-    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+    "imagen": "./img/filtroaire.jpg"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "marca": "Brembo",
     "categoria": "Frenos",
     "precio": 85.00,
-    "imagen": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=500&q=80"
+    "imagen": "./img/discosbrembo.jpg"
   },
   {
     "id": 8,
@@ -109,6 +109,6 @@
     "marca": "Brembo",
     "categoria": "Frenos",
     "precio": 42.50,
-    "imagen": "https://via.placeholder.com/200?text=Disco+de+Freno"
+    "imagen": "https://via.placehm/photo-1486006older.com/200?text=Disco+de+Freno"
   }
 ]
